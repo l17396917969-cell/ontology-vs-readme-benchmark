@@ -1,0 +1,145 @@
+{
+  "business_scopes": [
+    "Aster",
+    "Briar",
+    "Cedar",
+    "Dahlia",
+    "Elm",
+    "Fennel",
+    "Grove",
+    "Hazel",
+    "Iris",
+    "Juniper",
+    "Kite",
+    "Larch",
+    "Maple",
+    "Nettle",
+    "Oak",
+    "Pine",
+    "Quince",
+    "Rowan",
+    "Spruce",
+    "Thyme",
+    "Umber",
+    "Violet",
+    "Willow",
+    "Yarrow"
+  ],
+  "object_links": {
+    "account": {
+      "maps_buyer": "bridge",
+      "opens_cases": "ticket"
+    },
+    "bridge": {
+      "resolves_account": "account",
+      "links_checkout": "orders"
+    },
+    "orders": {
+      "resolves_buyer": "bridge",
+      "contains_items": "line",
+      "settles_with": "credit"
+    },
+    "line": {
+      "belongs_to_order": "orders"
+    },
+    "credit": {
+      "credits_order": "orders",
+      "policy_defined_by": "policy"
+    },
+    "policy": {
+      "uses_payment": "credit",
+      "uses_orders": "orders"
+    },
+    "wide": {
+      "sourced_from": "orders",
+      "item_source": "line"
+    },
+    "ticket": {
+      "filed_by": "account"
+    },
+    "partner": {}
+  },
+  "operations": {
+    "incident_count": {
+      "description": "Count incident tickets in the service desk.",
+      "args": [],
+      "path": [
+        "ticket"
+      ]
+    },
+    "incident_minutes": {
+      "description": "Total incident handling minutes for a loyalty tier of customers having at least one posted order. Count each ticket once.",
+      "args": [
+        "tier"
+      ],
+      "path": [
+        "ticket",
+        "account",
+        "bridge",
+        "orders"
+      ]
+    },
+    "dashboard_orders": {
+      "description": "Count unique order IDs observed in the dashboard export, where item observations can repeat.",
+      "args": [],
+      "path": [
+        "wide",
+        "orders"
+      ]
+    },
+    "posted_item_orders": {
+      "description": "Count posted orders that contain an SKU and whose customer belongs to a loyalty tier.",
+      "args": [
+        "sku",
+        "tier"
+      ],
+      "path": [
+        "line",
+        "orders",
+        "bridge",
+        "account"
+      ]
+    },
+    "net_collections": {
+      "description": "Compute posted net collections in cents under the Finance policy effective on the date of each order. Subtract settled credits only under v2.",
+      "args": [],
+      "path": [
+        "policy",
+        "orders",
+        "credit"
+      ]
+    },
+    "collections_delta": {
+      "description": "Difference in posted net collections between the first brand and then other_brand. A negative difference is valid.",
+      "args": [
+        "other_brand"
+      ],
+      "path": [
+        "policy",
+        "orders",
+        "credit"
+      ]
+    },
+    "partner_share": {
+      "description": "Share of posted orders placed by marketplace partners as a percentage. An unavailable buyer to partner mapping yields missing_relationship.",
+      "args": [],
+      "path": [
+        "partner",
+        "orders",
+        "bridge"
+      ]
+    },
+    "resolve_review_case": {
+      "description": "Set an open incident review case to resolved. Only supervisor with approved case can perform this action. A closed case stays closed.",
+      "args": [
+        "case_id"
+      ],
+      "path": [
+        "case_review"
+      ]
+    }
+  },
+  "missing_relationships": [
+    "buyer → marketplace partner"
+  ]
+}

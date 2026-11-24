@@ -1,0 +1,182 @@
+[
+  {
+    "id": "A01",
+    "brand": "Aster",
+    "kind": "single",
+    "text": "How many Aster support tickets are kind incident?",
+    "required": [
+      "aster-ticket"
+    ]
+  },
+  {
+    "id": "A02",
+    "brand": "Aster",
+    "kind": "single",
+    "text": "How many unique Aster checkout orders appear in the sales analytics dashboard export?",
+    "required": [
+      "aster-wide"
+    ]
+  },
+  {
+    "id": "A03",
+    "brand": "Aster",
+    "kind": "cross",
+    "text": "How many posted Aster orders have at least one BAG item and belong to a Gold loyalty account?",
+    "required": [
+      "aster-account",
+      "aster-bridge",
+      "aster-orders",
+      "aster-line"
+    ]
+  },
+  {
+    "id": "A04",
+    "brand": "Aster",
+    "kind": "cross",
+    "text": "How many distinct Aster CRM accounts in the West territory bought a PEN on a posted checkout?",
+    "required": [
+      "aster-account",
+      "aster-bridge",
+      "aster-orders",
+      "aster-line"
+    ]
+  },
+  {
+    "id": "A05",
+    "brand": "Aster",
+    "kind": "cross",
+    "text": "Total incident handling time in minutes for Aster accounts that made at least one posted order. Count each incident once.",
+    "required": [
+      "aster-account",
+      "aster-bridge",
+      "aster-orders",
+      "aster-ticket"
+    ]
+  },
+  {
+    "id": "A06",
+    "brand": "Aster",
+    "kind": "policy",
+    "text": "What are Aster's total posted net collections in cents across all order dates under the effective Finance policy?",
+    "required": [
+      "aster-orders",
+      "aster-credit",
+      "aster-policy"
+    ]
+  },
+  {
+    "id": "A07",
+    "brand": "Aster",
+    "kind": "policy",
+    "text": "For Gold Aster loyalty accounts, give posted net collections in cents with the correct historical Finance policy, on orders containing at least one BAG. Count each order once.",
+    "required": [
+      "aster-account",
+      "aster-bridge",
+      "aster-orders",
+      "aster-line",
+      "aster-credit",
+      "aster-policy"
+    ]
+  },
+  {
+    "id": "A08",
+    "brand": "Aster",
+    "kind": "missing",
+    "text": "What percentage of Aster posted orders were placed by Marketplace partners?",
+    "required": [
+      "aster-partner",
+      "aster-orders",
+      "aster-bridge"
+    ]
+  },
+  {
+    "id": "R01",
+    "brand": "Rowan",
+    "kind": "single",
+    "text": "How many Rowan support tickets are kind incident?",
+    "required": [
+      "rowan-ticket"
+    ]
+  },
+  {
+    "id": "R02",
+    "brand": "Rowan",
+    "kind": "single",
+    "text": "How many unique Rowan checkout orders appear in the sales analytics dashboard export?",
+    "required": [
+      "rowan-wide"
+    ]
+  },
+  {
+    "id": "R03",
+    "brand": "Rowan",
+    "kind": "cross",
+    "text": "How many posted Rowan orders have at least one BAG item and belong to a Gold loyalty account?",
+    "required": [
+      "rowan-account",
+      "rowan-bridge",
+      "rowan-orders",
+      "rowan-line"
+    ]
+  },
+  {
+    "id": "R04",
+    "brand": "Rowan",
+    "kind": "cross",
+    "text": "How many distinct Rowan CRM accounts in the West territory bought a PEN on a posted checkout?",
+    "required": [
+      "rowan-account",
+      "rowan-bridge",
+      "rowan-orders",
+      "rowan-line"
+    ]
+  },
+  {
+    "id": "R05",
+    "brand": "Rowan",
+    "kind": "cross",
+    "text": "Total incident handling time in minutes for Rowan accounts that made at least one posted order. Count each incident once.",
+    "required": [
+      "rowan-account",
+      "rowan-bridge",
+      "rowan-orders",
+      "rowan-ticket"
+    ]
+  },
+  {
+    "id": "R06",
+    "brand": "Rowan",
+    "kind": "policy",
+    "text": "What are Rowan's total posted net collections in cents across all order dates under the effective Finance policy?",
+    "required": [
+      "rowan-orders",
+      "rowan-credit",
+      "rowan-policy"
+    ]
+  },
+  {
+    "id": "R07",
+    "brand": "Rowan",
+    "kind": "policy",
+    "text": "For Gold Rowan loyalty accounts, give posted net collections in cents with the correct historical Finance policy, on orders containing at least one BAG. Count each order once.",
+    "required": [
+      "rowan-account",
+      "rowan-bridge",
+      "rowan-orders",
+      "rowan-line",
+      "rowan-credit",
+      "rowan-policy"
+    ]
+  },
+  {
+    "id": "R08",
+    "brand": "Rowan",
+    "kind": "missing",
+    "text": "What percentage of Rowan posted orders were placed by Marketplace partners?",
+    "required": [
+      "rowan-partner",
+      "rowan-orders",
+      "rowan-bridge"
+    ]
+  }
+]

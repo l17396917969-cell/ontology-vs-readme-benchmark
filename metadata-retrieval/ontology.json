@@ -1,0 +1,1418 @@
+{
+  "larch-ticket": {
+    "domain": "Larch",
+    "relations": {
+      "filed_by": "larch-account"
+    }
+  },
+  "yarrow-line": {
+    "domain": "Yarrow",
+    "relations": {
+      "belongs_to_order": "yarrow-orders"
+    }
+  },
+  "cedar-orders": {
+    "domain": "Cedar",
+    "relations": {
+      "resolves_buyer": "cedar-bridge",
+      "contains_items": "cedar-line",
+      "settles_with": "cedar-credit"
+    }
+  },
+  "fennel-credit": {
+    "domain": "Fennel",
+    "relations": {
+      "credits_order": "fennel-orders",
+      "policy_defined_by": "fennel-policy"
+    }
+  },
+  "dahlia-account": {
+    "domain": "Dahlia",
+    "relations": {
+      "maps_buyer": "dahlia-bridge",
+      "opens_cases": "dahlia-ticket"
+    }
+  },
+  "thyme-credit": {
+    "domain": "Thyme",
+    "relations": {
+      "credits_order": "thyme-orders",
+      "policy_defined_by": "thyme-policy"
+    }
+  },
+  "hazel-orders": {
+    "domain": "Hazel",
+    "relations": {
+      "resolves_buyer": "hazel-bridge",
+      "contains_items": "hazel-line",
+      "settles_with": "hazel-credit"
+    }
+  },
+  "cedar-wide": {
+    "domain": "Cedar",
+    "relations": {
+      "sourced_from": "cedar-orders",
+      "item_source": "cedar-line"
+    }
+  },
+  "umber-account": {
+    "domain": "Umber",
+    "relations": {
+      "maps_buyer": "umber-bridge",
+      "opens_cases": "umber-ticket"
+    }
+  },
+  "quince-credit": {
+    "domain": "Quince",
+    "relations": {
+      "credits_order": "quince-orders",
+      "policy_defined_by": "quince-policy"
+    }
+  },
+  "quince-ticket": {
+    "domain": "Quince",
+    "relations": {
+      "filed_by": "quince-account"
+    }
+  },
+  "iris-partner": {
+    "domain": "Iris",
+    "relations": {}
+  },
+  "aster-account": {
+    "domain": "Aster",
+    "relations": {
+      "maps_buyer": "aster-bridge",
+      "opens_cases": "aster-ticket"
+    }
+  },
+  "pine-policy": {
+    "domain": "Pine",
+    "relations": {
+      "uses_payment": "pine-credit",
+      "uses_orders": "pine-orders"
+    }
+  },
+  "larch-partner": {
+    "domain": "Larch",
+    "relations": {}
+  },
+  "pine-credit": {
+    "domain": "Pine",
+    "relations": {
+      "credits_order": "pine-orders",
+      "policy_defined_by": "pine-policy"
+    }
+  },
+  "fennel-line": {
+    "domain": "Fennel",
+    "relations": {
+      "belongs_to_order": "fennel-orders"
+    }
+  },
+  "yarrow-wide": {
+    "domain": "Yarrow",
+    "relations": {
+      "sourced_from": "yarrow-orders",
+      "item_source": "yarrow-line"
+    }
+  },
+  "willow-line": {
+    "domain": "Willow",
+    "relations": {
+      "belongs_to_order": "willow-orders"
+    }
+  },
+  "pine-line": {
+    "domain": "Pine",
+    "relations": {
+      "belongs_to_order": "pine-orders"
+    }
+  },
+  "iris-policy": {
+    "domain": "Iris",
+    "relations": {
+      "uses_payment": "iris-credit",
+      "uses_orders": "iris-orders"
+    }
+  },
+  "pine-bridge": {
+    "domain": "Pine",
+    "relations": {
+      "resolves_account": "pine-account",
+      "links_checkout": "pine-orders"
+    }
+  },
+  "nettle-bridge": {
+    "domain": "Nettle",
+    "relations": {
+      "resolves_account": "nettle-account",
+      "links_checkout": "nettle-orders"
+    }
+  },
+  "umber-policy": {
+    "domain": "Umber",
+    "relations": {
+      "uses_payment": "umber-credit",
+      "uses_orders": "umber-orders"
+    }
+  },
+  "maple-policy": {
+    "domain": "Maple",
+    "relations": {
+      "uses_payment": "maple-credit",
+      "uses_orders": "maple-orders"
+    }
+  },
+  "grove-account": {
+    "domain": "Grove",
+    "relations": {
+      "maps_buyer": "grove-bridge",
+      "opens_cases": "grove-ticket"
+    }
+  },
+  "aster-bridge": {
+    "domain": "Aster",
+    "relations": {
+      "resolves_account": "aster-account",
+      "links_checkout": "aster-orders"
+    }
+  },
+  "violet-account": {
+    "domain": "Violet",
+    "relations": {
+      "maps_buyer": "violet-bridge",
+      "opens_cases": "violet-ticket"
+    }
+  },
+  "elm-bridge": {
+    "domain": "Elm",
+    "relations": {
+      "resolves_account": "elm-account",
+      "links_checkout": "elm-orders"
+    }
+  },
+  "oak-ticket": {
+    "domain": "Oak",
+    "relations": {
+      "filed_by": "oak-account"
+    }
+  },
+  "iris-wide": {
+    "domain": "Iris",
+    "relations": {
+      "sourced_from": "iris-orders",
+      "item_source": "iris-line"
+    }
+  },
+  "briar-partner": {
+    "domain": "Briar",
+    "relations": {}
+  },
+  "spruce-line": {
+    "domain": "Spruce",
+    "relations": {
+      "belongs_to_order": "spruce-orders"
+    }
+  },
+  "cedar-line": {
+    "domain": "Cedar",
+    "relations": {
+      "belongs_to_order": "cedar-orders"
+    }
+  },
+  "fennel-wide": {
+    "domain": "Fennel",
+    "relations": {
+      "sourced_from": "fennel-orders",
+      "item_source": "fennel-line"
+    }
+  },
+  "umber-credit": {
+    "domain": "Umber",
+    "relations": {
+      "credits_order": "umber-orders",
+      "policy_defined_by": "umber-policy"
+    }
+  },
+  "violet-wide": {
+    "domain": "Violet",
+    "relations": {
+      "sourced_from": "violet-orders",
+      "item_source": "violet-line"
+    }
+  },
+  "quince-orders": {
+    "domain": "Quince",
+    "relations": {
+      "resolves_buyer": "quince-bridge",
+      "contains_items": "quince-line",
+      "settles_with": "quince-credit"
+    }
+  },
+  "larch-policy": {
+    "domain": "Larch",
+    "relations": {
+      "uses_payment": "larch-credit",
+      "uses_orders": "larch-orders"
+    }
+  },
+  "iris-orders": {
+    "domain": "Iris",
+    "relations": {
+      "resolves_buyer": "iris-bridge",
+      "contains_items": "iris-line",
+      "settles_with": "iris-credit"
+    }
+  },
+  "umber-wide": {
+    "domain": "Umber",
+    "relations": {
+      "sourced_from": "umber-orders",
+      "item_source": "umber-line"
+    }
+  },
+  "spruce-partner": {
+    "domain": "Spruce",
+    "relations": {}
+  },
+  "kite-ticket": {
+    "domain": "Kite",
+    "relations": {
+      "filed_by": "kite-account"
+    }
+  },
+  "nettle-partner": {
+    "domain": "Nettle",
+    "relations": {}
+  },
+  "spruce-ticket": {
+    "domain": "Spruce",
+    "relations": {
+      "filed_by": "spruce-account"
+    }
+  },
+  "umber-orders": {
+    "domain": "Umber",
+    "relations": {
+      "resolves_buyer": "umber-bridge",
+      "contains_items": "umber-line",
+      "settles_with": "umber-credit"
+    }
+  },
+  "pine-account": {
+    "domain": "Pine",
+    "relations": {
+      "maps_buyer": "pine-bridge",
+      "opens_cases": "pine-ticket"
+    }
+  },
+  "umber-ticket": {
+    "domain": "Umber",
+    "relations": {
+      "filed_by": "umber-account"
+    }
+  },
+  "briar-policy": {
+    "domain": "Briar",
+    "relations": {
+      "uses_payment": "briar-credit",
+      "uses_orders": "briar-orders"
+    }
+  },
+  "kite-wide": {
+    "domain": "Kite",
+    "relations": {
+      "sourced_from": "kite-orders",
+      "item_source": "kite-line"
+    }
+  },
+  "hazel-bridge": {
+    "domain": "Hazel",
+    "relations": {
+      "resolves_account": "hazel-account",
+      "links_checkout": "hazel-orders"
+    }
+  },
+  "nettle-policy": {
+    "domain": "Nettle",
+    "relations": {
+      "uses_payment": "nettle-credit",
+      "uses_orders": "nettle-orders"
+    }
+  },
+  "cedar-credit": {
+    "domain": "Cedar",
+    "relations": {
+      "credits_order": "cedar-orders",
+      "policy_defined_by": "cedar-policy"
+    }
+  },
+  "rowan-wide": {
+    "domain": "Rowan",
+    "relations": {
+      "sourced_from": "rowan-orders",
+      "item_source": "rowan-line"
+    }
+  },
+  "thyme-partner": {
+    "domain": "Thyme",
+    "relations": {}
+  },
+  "grove-orders": {
+    "domain": "Grove",
+    "relations": {
+      "resolves_buyer": "grove-bridge",
+      "contains_items": "grove-line",
+      "settles_with": "grove-credit"
+    }
+  },
+  "violet-policy": {
+    "domain": "Violet",
+    "relations": {
+      "uses_payment": "violet-credit",
+      "uses_orders": "violet-orders"
+    }
+  },
+  "kite-line": {
+    "domain": "Kite",
+    "relations": {
+      "belongs_to_order": "kite-orders"
+    }
+  },
+  "umber-line": {
+    "domain": "Umber",
+    "relations": {
+      "belongs_to_order": "umber-orders"
+    }
+  },
+  "larch-line": {
+    "domain": "Larch",
+    "relations": {
+      "belongs_to_order": "larch-orders"
+    }
+  },
+  "hazel-line": {
+    "domain": "Hazel",
+    "relations": {
+      "belongs_to_order": "hazel-orders"
+    }
+  },
+  "dahlia-line": {
+    "domain": "Dahlia",
+    "relations": {
+      "belongs_to_order": "dahlia-orders"
+    }
+  },
+  "nettle-account": {
+    "domain": "Nettle",
+    "relations": {
+      "maps_buyer": "nettle-bridge",
+      "opens_cases": "nettle-ticket"
+    }
+  },
+  "yarrow-policy": {
+    "domain": "Yarrow",
+    "relations": {
+      "uses_payment": "yarrow-credit",
+      "uses_orders": "yarrow-orders"
+    }
+  },
+  "willow-partner": {
+    "domain": "Willow",
+    "relations": {}
+  },
+  "fennel-orders": {
+    "domain": "Fennel",
+    "relations": {
+      "resolves_buyer": "fennel-bridge",
+      "contains_items": "fennel-line",
+      "settles_with": "fennel-credit"
+    }
+  },
+  "aster-policy": {
+    "domain": "Aster",
+    "relations": {
+      "uses_payment": "aster-credit",
+      "uses_orders": "aster-orders"
+    }
+  },
+  "briar-orders": {
+    "domain": "Briar",
+    "relations": {
+      "resolves_buyer": "briar-bridge",
+      "contains_items": "briar-line",
+      "settles_with": "briar-credit"
+    }
+  },
+  "maple-ticket": {
+    "domain": "Maple",
+    "relations": {
+      "filed_by": "maple-account"
+    }
+  },
+  "larch-bridge": {
+    "domain": "Larch",
+    "relations": {
+      "resolves_account": "larch-account",
+      "links_checkout": "larch-orders"
+    }
+  },
+  "rowan-account": {
+    "domain": "Rowan",
+    "relations": {
+      "maps_buyer": "rowan-bridge",
+      "opens_cases": "rowan-ticket"
+    }
+  },
+  "juniper-account": {
+    "domain": "Juniper",
+    "relations": {
+      "maps_buyer": "juniper-bridge",
+      "opens_cases": "juniper-ticket"
+    }
+  },
+  "nettle-ticket": {
+    "domain": "Nettle",
+    "relations": {
+      "filed_by": "nettle-account"
+    }
+  },
+  "iris-ticket": {
+    "domain": "Iris",
+    "relations": {
+      "filed_by": "iris-account"
+    }
+  },
+  "quince-line": {
+    "domain": "Quince",
+    "relations": {
+      "belongs_to_order": "quince-orders"
+    }
+  },
+  "quince-partner": {
+    "domain": "Quince",
+    "relations": {}
+  },
+  "aster-orders": {
+    "domain": "Aster",
+    "relations": {
+      "resolves_buyer": "aster-bridge",
+      "contains_items": "aster-line",
+      "settles_with": "aster-credit"
+    }
+  },
+  "quince-policy": {
+    "domain": "Quince",
+    "relations": {
+      "uses_payment": "quince-credit",
+      "uses_orders": "quince-orders"
+    }
+  },
+  "rowan-policy": {
+    "domain": "Rowan",
+    "relations": {
+      "uses_payment": "rowan-credit",
+      "uses_orders": "rowan-orders"
+    }
+  },
+  "oak-line": {
+    "domain": "Oak",
+    "relations": {
+      "belongs_to_order": "oak-orders"
+    }
+  },
+  "briar-ticket": {
+    "domain": "Briar",
+    "relations": {
+      "filed_by": "briar-account"
+    }
+  },
+  "rowan-orders": {
+    "domain": "Rowan",
+    "relations": {
+      "resolves_buyer": "rowan-bridge",
+      "contains_items": "rowan-line",
+      "settles_with": "rowan-credit"
+    }
+  },
+  "rowan-partner": {
+    "domain": "Rowan",
+    "relations": {}
+  },
+  "kite-policy": {
+    "domain": "Kite",
+    "relations": {
+      "uses_payment": "kite-credit",
+      "uses_orders": "kite-orders"
+    }
+  },
+  "aster-wide": {
+    "domain": "Aster",
+    "relations": {
+      "sourced_from": "aster-orders",
+      "item_source": "aster-line"
+    }
+  },
+  "fennel-policy": {
+    "domain": "Fennel",
+    "relations": {
+      "uses_payment": "fennel-credit",
+      "uses_orders": "fennel-orders"
+    }
+  },
+  "hazel-account": {
+    "domain": "Hazel",
+    "relations": {
+      "maps_buyer": "hazel-bridge",
+      "opens_cases": "hazel-ticket"
+    }
+  },
+  "nettle-wide": {
+    "domain": "Nettle",
+    "relations": {
+      "sourced_from": "nettle-orders",
+      "item_source": "nettle-line"
+    }
+  },
+  "violet-ticket": {
+    "domain": "Violet",
+    "relations": {
+      "filed_by": "violet-account"
+    }
+  },
+  "maple-line": {
+    "domain": "Maple",
+    "relations": {
+      "belongs_to_order": "maple-orders"
+    }
+  },
+  "cedar-partner": {
+    "domain": "Cedar",
+    "relations": {}
+  },
+  "violet-partner": {
+    "domain": "Violet",
+    "relations": {}
+  },
+  "spruce-policy": {
+    "domain": "Spruce",
+    "relations": {
+      "uses_payment": "spruce-credit",
+      "uses_orders": "spruce-orders"
+    }
+  },
+  "grove-wide": {
+    "domain": "Grove",
+    "relations": {
+      "sourced_from": "grove-orders",
+      "item_source": "grove-line"
+    }
+  },
+  "nettle-line": {
+    "domain": "Nettle",
+    "relations": {
+      "belongs_to_order": "nettle-orders"
+    }
+  },
+  "oak-credit": {
+    "domain": "Oak",
+    "relations": {
+      "credits_order": "oak-orders",
+      "policy_defined_by": "oak-policy"
+    }
+  },
+  "oak-wide": {
+    "domain": "Oak",
+    "relations": {
+      "sourced_from": "oak-orders",
+      "item_source": "oak-line"
+    }
+  },
+  "dahlia-wide": {
+    "domain": "Dahlia",
+    "relations": {
+      "sourced_from": "dahlia-orders",
+      "item_source": "dahlia-line"
+    }
+  },
+  "quince-wide": {
+    "domain": "Quince",
+    "relations": {
+      "sourced_from": "quince-orders",
+      "item_source": "quince-line"
+    }
+  },
+  "briar-line": {
+    "domain": "Briar",
+    "relations": {
+      "belongs_to_order": "briar-orders"
+    }
+  },
+  "maple-credit": {
+    "domain": "Maple",
+    "relations": {
+      "credits_order": "maple-orders",
+      "policy_defined_by": "maple-policy"
+    }
+  },
+  "kite-bridge": {
+    "domain": "Kite",
+    "relations": {
+      "resolves_account": "kite-account",
+      "links_checkout": "kite-orders"
+    }
+  },
+  "fennel-partner": {
+    "domain": "Fennel",
+    "relations": {}
+  },
+  "cedar-account": {
+    "domain": "Cedar",
+    "relations": {
+      "maps_buyer": "cedar-bridge",
+      "opens_cases": "cedar-ticket"
+    }
+  },
+  "kite-account": {
+    "domain": "Kite",
+    "relations": {
+      "maps_buyer": "kite-bridge",
+      "opens_cases": "kite-ticket"
+    }
+  },
+  "elm-ticket": {
+    "domain": "Elm",
+    "relations": {
+      "filed_by": "elm-account"
+    }
+  },
+  "elm-credit": {
+    "domain": "Elm",
+    "relations": {
+      "credits_order": "elm-orders",
+      "policy_defined_by": "elm-policy"
+    }
+  },
+  "willow-ticket": {
+    "domain": "Willow",
+    "relations": {
+      "filed_by": "willow-account"
+    }
+  },
+  "cedar-bridge": {
+    "domain": "Cedar",
+    "relations": {
+      "resolves_account": "cedar-account",
+      "links_checkout": "cedar-orders"
+    }
+  },
+  "elm-policy": {
+    "domain": "Elm",
+    "relations": {
+      "uses_payment": "elm-credit",
+      "uses_orders": "elm-orders"
+    }
+  },
+  "willow-policy": {
+    "domain": "Willow",
+    "relations": {
+      "uses_payment": "willow-credit",
+      "uses_orders": "willow-orders"
+    }
+  },
+  "briar-wide": {
+    "domain": "Briar",
+    "relations": {
+      "sourced_from": "briar-orders",
+      "item_source": "briar-line"
+    }
+  },
+  "juniper-policy": {
+    "domain": "Juniper",
+    "relations": {
+      "uses_payment": "juniper-credit",
+      "uses_orders": "juniper-orders"
+    }
+  },
+  "juniper-orders": {
+    "domain": "Juniper",
+    "relations": {
+      "resolves_buyer": "juniper-bridge",
+      "contains_items": "juniper-line",
+      "settles_with": "juniper-credit"
+    }
+  },
+  "dahlia-policy": {
+    "domain": "Dahlia",
+    "relations": {
+      "uses_payment": "dahlia-credit",
+      "uses_orders": "dahlia-orders"
+    }
+  },
+  "yarrow-ticket": {
+    "domain": "Yarrow",
+    "relations": {
+      "filed_by": "yarrow-account"
+    }
+  },
+  "oak-orders": {
+    "domain": "Oak",
+    "relations": {
+      "resolves_buyer": "oak-bridge",
+      "contains_items": "oak-line",
+      "settles_with": "oak-credit"
+    }
+  },
+  "iris-account": {
+    "domain": "Iris",
+    "relations": {
+      "maps_buyer": "iris-bridge",
+      "opens_cases": "iris-ticket"
+    }
+  },
+  "aster-ticket": {
+    "domain": "Aster",
+    "relations": {
+      "filed_by": "aster-account"
+    }
+  },
+  "iris-credit": {
+    "domain": "Iris",
+    "relations": {
+      "credits_order": "iris-orders",
+      "policy_defined_by": "iris-policy"
+    }
+  },
+  "larch-credit": {
+    "domain": "Larch",
+    "relations": {
+      "credits_order": "larch-orders",
+      "policy_defined_by": "larch-policy"
+    }
+  },
+  "elm-line": {
+    "domain": "Elm",
+    "relations": {
+      "belongs_to_order": "elm-orders"
+    }
+  },
+  "violet-bridge": {
+    "domain": "Violet",
+    "relations": {
+      "resolves_account": "violet-account",
+      "links_checkout": "violet-orders"
+    }
+  },
+  "grove-credit": {
+    "domain": "Grove",
+    "relations": {
+      "credits_order": "grove-orders",
+      "policy_defined_by": "grove-policy"
+    }
+  },
+  "thyme-ticket": {
+    "domain": "Thyme",
+    "relations": {
+      "filed_by": "thyme-account"
+    }
+  },
+  "dahlia-bridge": {
+    "domain": "Dahlia",
+    "relations": {
+      "resolves_account": "dahlia-account",
+      "links_checkout": "dahlia-orders"
+    }
+  },
+  "juniper-partner": {
+    "domain": "Juniper",
+    "relations": {}
+  },
+  "iris-line": {
+    "domain": "Iris",
+    "relations": {
+      "belongs_to_order": "iris-orders"
+    }
+  },
+  "grove-partner": {
+    "domain": "Grove",
+    "relations": {}
+  },
+  "yarrow-orders": {
+    "domain": "Yarrow",
+    "relations": {
+      "resolves_buyer": "yarrow-bridge",
+      "contains_items": "yarrow-line",
+      "settles_with": "yarrow-credit"
+    }
+  },
+  "juniper-wide": {
+    "domain": "Juniper",
+    "relations": {
+      "sourced_from": "juniper-orders",
+      "item_source": "juniper-line"
+    }
+  },
+  "fennel-account": {
+    "domain": "Fennel",
+    "relations": {
+      "maps_buyer": "fennel-bridge",
+      "opens_cases": "fennel-ticket"
+    }
+  },
+  "willow-bridge": {
+    "domain": "Willow",
+    "relations": {
+      "resolves_account": "willow-account",
+      "links_checkout": "willow-orders"
+    }
+  },
+  "cedar-ticket": {
+    "domain": "Cedar",
+    "relations": {
+      "filed_by": "cedar-account"
+    }
+  },
+  "maple-account": {
+    "domain": "Maple",
+    "relations": {
+      "maps_buyer": "maple-bridge",
+      "opens_cases": "maple-ticket"
+    }
+  },
+  "thyme-bridge": {
+    "domain": "Thyme",
+    "relations": {
+      "resolves_account": "thyme-account",
+      "links_checkout": "thyme-orders"
+    }
+  },
+  "spruce-account": {
+    "domain": "Spruce",
+    "relations": {
+      "maps_buyer": "spruce-bridge",
+      "opens_cases": "spruce-ticket"
+    }
+  },
+  "grove-policy": {
+    "domain": "Grove",
+    "relations": {
+      "uses_payment": "grove-credit",
+      "uses_orders": "grove-orders"
+    }
+  },
+  "maple-orders": {
+    "domain": "Maple",
+    "relations": {
+      "resolves_buyer": "maple-bridge",
+      "contains_items": "maple-line",
+      "settles_with": "maple-credit"
+    }
+  },
+  "fennel-bridge": {
+    "domain": "Fennel",
+    "relations": {
+      "resolves_account": "fennel-account",
+      "links_checkout": "fennel-orders"
+    }
+  },
+  "pine-partner": {
+    "domain": "Pine",
+    "relations": {}
+  },
+  "iris-bridge": {
+    "domain": "Iris",
+    "relations": {
+      "resolves_account": "iris-account",
+      "links_checkout": "iris-orders"
+    }
+  },
+  "pine-orders": {
+    "domain": "Pine",
+    "relations": {
+      "resolves_buyer": "pine-bridge",
+      "contains_items": "pine-line",
+      "settles_with": "pine-credit"
+    }
+  },
+  "cedar-policy": {
+    "domain": "Cedar",
+    "relations": {
+      "uses_payment": "cedar-credit",
+      "uses_orders": "cedar-orders"
+    }
+  },
+  "larch-wide": {
+    "domain": "Larch",
+    "relations": {
+      "sourced_from": "larch-orders",
+      "item_source": "larch-line"
+    }
+  },
+  "larch-orders": {
+    "domain": "Larch",
+    "relations": {
+      "resolves_buyer": "larch-bridge",
+      "contains_items": "larch-line",
+      "settles_with": "larch-credit"
+    }
+  },
+  "briar-bridge": {
+    "domain": "Briar",
+    "relations": {
+      "resolves_account": "briar-account",
+      "links_checkout": "briar-orders"
+    }
+  },
+  "hazel-partner": {
+    "domain": "Hazel",
+    "relations": {}
+  },
+  "briar-account": {
+    "domain": "Briar",
+    "relations": {
+      "maps_buyer": "briar-bridge",
+      "opens_cases": "briar-ticket"
+    }
+  },
+  "kite-partner": {
+    "domain": "Kite",
+    "relations": {}
+  },
+  "aster-line": {
+    "domain": "Aster",
+    "relations": {
+      "belongs_to_order": "aster-orders"
+    }
+  },
+  "elm-wide": {
+    "domain": "Elm",
+    "relations": {
+      "sourced_from": "elm-orders",
+      "item_source": "elm-line"
+    }
+  },
+  "thyme-policy": {
+    "domain": "Thyme",
+    "relations": {
+      "uses_payment": "thyme-credit",
+      "uses_orders": "thyme-orders"
+    }
+  },
+  "kite-orders": {
+    "domain": "Kite",
+    "relations": {
+      "resolves_buyer": "kite-bridge",
+      "contains_items": "kite-line",
+      "settles_with": "kite-credit"
+    }
+  },
+  "larch-account": {
+    "domain": "Larch",
+    "relations": {
+      "maps_buyer": "larch-bridge",
+      "opens_cases": "larch-ticket"
+    }
+  },
+  "spruce-orders": {
+    "domain": "Spruce",
+    "relations": {
+      "resolves_buyer": "spruce-bridge",
+      "contains_items": "spruce-line",
+      "settles_with": "spruce-credit"
+    }
+  },
+  "nettle-credit": {
+    "domain": "Nettle",
+    "relations": {
+      "credits_order": "nettle-orders",
+      "policy_defined_by": "nettle-policy"
+    }
+  },
+  "hazel-wide": {
+    "domain": "Hazel",
+    "relations": {
+      "sourced_from": "hazel-orders",
+      "item_source": "hazel-line"
+    }
+  },
+  "dahlia-ticket": {
+    "domain": "Dahlia",
+    "relations": {
+      "filed_by": "dahlia-account"
+    }
+  },
+  "quince-bridge": {
+    "domain": "Quince",
+    "relations": {
+      "resolves_account": "quince-account",
+      "links_checkout": "quince-orders"
+    }
+  },
+  "aster-credit": {
+    "domain": "Aster",
+    "relations": {
+      "credits_order": "aster-orders",
+      "policy_defined_by": "aster-policy"
+    }
+  },
+  "oak-account": {
+    "domain": "Oak",
+    "relations": {
+      "maps_buyer": "oak-bridge",
+      "opens_cases": "oak-ticket"
+    }
+  },
+  "aster-partner": {
+    "domain": "Aster",
+    "relations": {}
+  },
+  "elm-orders": {
+    "domain": "Elm",
+    "relations": {
+      "resolves_buyer": "elm-bridge",
+      "contains_items": "elm-line",
+      "settles_with": "elm-credit"
+    }
+  },
+  "hazel-policy": {
+    "domain": "Hazel",
+    "relations": {
+      "uses_payment": "hazel-credit",
+      "uses_orders": "hazel-orders"
+    }
+  },
+  "grove-bridge": {
+    "domain": "Grove",
+    "relations": {
+      "resolves_account": "grove-account",
+      "links_checkout": "grove-orders"
+    }
+  },
+  "umber-bridge": {
+    "domain": "Umber",
+    "relations": {
+      "resolves_account": "umber-account",
+      "links_checkout": "umber-orders"
+    }
+  },
+  "yarrow-credit": {
+    "domain": "Yarrow",
+    "relations": {
+      "credits_order": "yarrow-orders",
+      "policy_defined_by": "yarrow-policy"
+    }
+  },
+  "hazel-ticket": {
+    "domain": "Hazel",
+    "relations": {
+      "filed_by": "hazel-account"
+    }
+  },
+  "rowan-line": {
+    "domain": "Rowan",
+    "relations": {
+      "belongs_to_order": "rowan-orders"
+    }
+  },
+  "nettle-orders": {
+    "domain": "Nettle",
+    "relations": {
+      "resolves_buyer": "nettle-bridge",
+      "contains_items": "nettle-line",
+      "settles_with": "nettle-credit"
+    }
+  },
+  "yarrow-account": {
+    "domain": "Yarrow",
+    "relations": {
+      "maps_buyer": "yarrow-bridge",
+      "opens_cases": "yarrow-ticket"
+    }
+  },
+  "oak-partner": {
+    "domain": "Oak",
+    "relations": {}
+  },
+  "maple-bridge": {
+    "domain": "Maple",
+    "relations": {
+      "resolves_account": "maple-account",
+      "links_checkout": "maple-orders"
+    }
+  },
+  "spruce-bridge": {
+    "domain": "Spruce",
+    "relations": {
+      "resolves_account": "spruce-account",
+      "links_checkout": "spruce-orders"
+    }
+  },
+  "quince-account": {
+    "domain": "Quince",
+    "relations": {
+      "maps_buyer": "quince-bridge",
+      "opens_cases": "quince-ticket"
+    }
+  },
+  "thyme-wide": {
+    "domain": "Thyme",
+    "relations": {
+      "sourced_from": "thyme-orders",
+      "item_source": "thyme-line"
+    }
+  },
+  "oak-policy": {
+    "domain": "Oak",
+    "relations": {
+      "uses_payment": "oak-credit",
+      "uses_orders": "oak-orders"
+    }
+  },
+  "rowan-credit": {
+    "domain": "Rowan",
+    "relations": {
+      "credits_order": "rowan-orders",
+      "policy_defined_by": "rowan-policy"
+    }
+  },
+  "grove-line": {
+    "domain": "Grove",
+    "relations": {
+      "belongs_to_order": "grove-orders"
+    }
+  },
+  "violet-orders": {
+    "domain": "Violet",
+    "relations": {
+      "resolves_buyer": "violet-bridge",
+      "contains_items": "violet-line",
+      "settles_with": "violet-credit"
+    }
+  },
+  "fennel-ticket": {
+    "domain": "Fennel",
+    "relations": {
+      "filed_by": "fennel-account"
+    }
+  },
+  "rowan-bridge": {
+    "domain": "Rowan",
+    "relations": {
+      "resolves_account": "rowan-account",
+      "links_checkout": "rowan-orders"
+    }
+  },
+  "willow-orders": {
+    "domain": "Willow",
+    "relations": {
+      "resolves_buyer": "willow-bridge",
+      "contains_items": "willow-line",
+      "settles_with": "willow-credit"
+    }
+  },
+  "grove-ticket": {
+    "domain": "Grove",
+    "relations": {
+      "filed_by": "grove-account"
+    }
+  },
+  "willow-account": {
+    "domain": "Willow",
+    "relations": {
+      "maps_buyer": "willow-bridge",
+      "opens_cases": "willow-ticket"
+    }
+  },
+  "violet-credit": {
+    "domain": "Violet",
+    "relations": {
+      "credits_order": "violet-orders",
+      "policy_defined_by": "violet-policy"
+    }
+  },
+  "dahlia-partner": {
+    "domain": "Dahlia",
+    "relations": {}
+  },
+  "hazel-credit": {
+    "domain": "Hazel",
+    "relations": {
+      "credits_order": "hazel-orders",
+      "policy_defined_by": "hazel-policy"
+    }
+  },
+  "maple-partner": {
+    "domain": "Maple",
+    "relations": {}
+  },
+  "briar-credit": {
+    "domain": "Briar",
+    "relations": {
+      "credits_order": "briar-orders",
+      "policy_defined_by": "briar-policy"
+    }
+  },
+  "dahlia-orders": {
+    "domain": "Dahlia",
+    "relations": {
+      "resolves_buyer": "dahlia-bridge",
+      "contains_items": "dahlia-line",
+      "settles_with": "dahlia-credit"
+    }
+  },
+  "thyme-account": {
+    "domain": "Thyme",
+    "relations": {
+      "maps_buyer": "thyme-bridge",
+      "opens_cases": "thyme-ticket"
+    }
+  },
+  "thyme-orders": {
+    "domain": "Thyme",
+    "relations": {
+      "resolves_buyer": "thyme-bridge",
+      "contains_items": "thyme-line",
+      "settles_with": "thyme-credit"
+    }
+  },
+  "spruce-credit": {
+    "domain": "Spruce",
+    "relations": {
+      "credits_order": "spruce-orders",
+      "policy_defined_by": "spruce-policy"
+    }
+  },
+  "juniper-bridge": {
+    "domain": "Juniper",
+    "relations": {
+      "resolves_account": "juniper-account",
+      "links_checkout": "juniper-orders"
+    }
+  },
+  "spruce-wide": {
+    "domain": "Spruce",
+    "relations": {
+      "sourced_from": "spruce-orders",
+      "item_source": "spruce-line"
+    }
+  },
+  "juniper-ticket": {
+    "domain": "Juniper",
+    "relations": {
+      "filed_by": "juniper-account"
+    }
+  },
+  "elm-account": {
+    "domain": "Elm",
+    "relations": {
+      "maps_buyer": "elm-bridge",
+      "opens_cases": "elm-ticket"
+    }
+  },
+  "violet-line": {
+    "domain": "Violet",
+    "relations": {
+      "belongs_to_order": "violet-orders"
+    }
+  },
+  "pine-ticket": {
+    "domain": "Pine",
+    "relations": {
+      "filed_by": "pine-account"
+    }
+  },
+  "willow-credit": {
+    "domain": "Willow",
+    "relations": {
+      "credits_order": "willow-orders",
+      "policy_defined_by": "willow-policy"
+    }
+  },
+  "dahlia-credit": {
+    "domain": "Dahlia",
+    "relations": {
+      "credits_order": "dahlia-orders",
+      "policy_defined_by": "dahlia-policy"
+    }
+  },
+  "yarrow-partner": {
+    "domain": "Yarrow",
+    "relations": {}
+  },
+  "yarrow-bridge": {
+    "domain": "Yarrow",
+    "relations": {
+      "resolves_account": "yarrow-account",
+      "links_checkout": "yarrow-orders"
+    }
+  },
+  "juniper-line": {
+    "domain": "Juniper",
+    "relations": {
+      "belongs_to_order": "juniper-orders"
+    }
+  },
+  "juniper-credit": {
+    "domain": "Juniper",
+    "relations": {
+      "credits_order": "juniper-orders",
+      "policy_defined_by": "juniper-policy"
+    }
+  },
+  "willow-wide": {
+    "domain": "Willow",
+    "relations": {
+      "sourced_from": "willow-orders",
+      "item_source": "willow-line"
+    }
+  },
+  "umber-partner": {
+    "domain": "Umber",
+    "relations": {}
+  },
+  "elm-partner": {
+    "domain": "Elm",
+    "relations": {}
+  },
+  "rowan-ticket": {
+    "domain": "Rowan",
+    "relations": {
+      "filed_by": "rowan-account"
+    }
+  },
+  "pine-wide": {
+    "domain": "Pine",
+    "relations": {
+      "sourced_from": "pine-orders",
+      "item_source": "pine-line"
+    }
+  },
+  "thyme-line": {
+    "domain": "Thyme",
+    "relations": {
+      "belongs_to_order": "thyme-orders"
+    }
+  },
+  "kite-credit": {
+    "domain": "Kite",
+    "relations": {
+      "credits_order": "kite-orders",
+      "policy_defined_by": "kite-policy"
+    }
+  },
+  "oak-bridge": {
+    "domain": "Oak",
+    "relations": {
+      "resolves_account": "oak-account",
+      "links_checkout": "oak-orders"
+    }
+  },
+  "maple-wide": {
+    "domain": "Maple",
+    "relations": {
+      "sourced_from": "maple-orders",
+      "item_source": "maple-line"
+    }
+  }
+}

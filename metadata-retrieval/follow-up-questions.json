@@ -1,0 +1,362 @@
+[
+  {
+    "id": "C11",
+    "kind": "support",
+    "domains": [
+      "Cedar"
+    ],
+    "text": "How many staff minutes went to incident cases for Cedar Gold customers who had at least one completed checkout? Count a case once.",
+    "required": [
+      "cedar-account",
+      "cedar-bridge",
+      "cedar-orders",
+      "cedar-ticket"
+    ]
+  },
+  {
+    "id": "C12",
+    "kind": "policy",
+    "domains": [
+      "Cedar"
+    ],
+    "text": "Under the Finance memo that applied on each checkout date, how many cents did Cedar collect net on posted checkouts that came from West CRM accounts and included a PEN?",
+    "required": [
+      "cedar-account",
+      "cedar-bridge",
+      "cedar-credit",
+      "cedar-line",
+      "cedar-orders",
+      "cedar-policy"
+    ]
+  },
+  {
+    "id": "C13",
+    "kind": "two_domain",
+    "domains": [
+      "Cedar",
+      "Fennel"
+    ],
+    "text": "Subtract Fennel's total posted net collections from Cedar's total posted net collections in cents. Use the applicable policy at the time of each checkout; a negative difference is valid.",
+    "required": [
+      "cedar-credit",
+      "cedar-orders",
+      "cedar-policy",
+      "fennel-credit",
+      "fennel-orders",
+      "fennel-policy"
+    ]
+  },
+  {
+    "id": "C14",
+    "kind": "missing",
+    "domains": [
+      "Cedar"
+    ],
+    "text": "How many distinct Cedar Marketplace resellers placed a posted checkout? Use the reseller classification from its marketplace registry.",
+    "required": [
+      "cedar-bridge",
+      "cedar-orders",
+      "cedar-partner"
+    ]
+  },
+  {
+    "id": "F11",
+    "kind": "support",
+    "domains": [
+      "Fennel"
+    ],
+    "text": "How many staff minutes went to incident cases for Fennel Gold customers who had at least one completed checkout? Count a case once.",
+    "required": [
+      "fennel-account",
+      "fennel-bridge",
+      "fennel-orders",
+      "fennel-ticket"
+    ]
+  },
+  {
+    "id": "F12",
+    "kind": "policy",
+    "domains": [
+      "Fennel"
+    ],
+    "text": "Under the Finance memo that applied on each checkout date, how many cents did Fennel collect net on posted checkouts that came from West CRM accounts and included a PEN?",
+    "required": [
+      "fennel-account",
+      "fennel-bridge",
+      "fennel-credit",
+      "fennel-line",
+      "fennel-orders",
+      "fennel-policy"
+    ]
+  },
+  {
+    "id": "F13",
+    "kind": "two_domain",
+    "domains": [
+      "Fennel",
+      "Larch"
+    ],
+    "text": "Subtract Larch's total posted net collections from Fennel's total posted net collections in cents. Use the applicable policy at the time of each checkout; a negative difference is valid.",
+    "required": [
+      "fennel-credit",
+      "fennel-orders",
+      "fennel-policy",
+      "larch-credit",
+      "larch-orders",
+      "larch-policy"
+    ]
+  },
+  {
+    "id": "F14",
+    "kind": "missing",
+    "domains": [
+      "Fennel"
+    ],
+    "text": "How many distinct Fennel Marketplace resellers placed a posted checkout? Use the reseller classification from its marketplace registry.",
+    "required": [
+      "fennel-bridge",
+      "fennel-orders",
+      "fennel-partner"
+    ]
+  },
+  {
+    "id": "L11",
+    "kind": "support",
+    "domains": [
+      "Larch"
+    ],
+    "text": "How many staff minutes went to incident cases for Larch Gold customers who had at least one completed checkout? Count a case once.",
+    "required": [
+      "larch-account",
+      "larch-bridge",
+      "larch-orders",
+      "larch-ticket"
+    ]
+  },
+  {
+    "id": "L12",
+    "kind": "policy",
+    "domains": [
+      "Larch"
+    ],
+    "text": "Under the Finance memo that applied on each checkout date, how many cents did Larch collect net on posted checkouts that came from West CRM accounts and included a PEN?",
+    "required": [
+      "larch-account",
+      "larch-bridge",
+      "larch-credit",
+      "larch-line",
+      "larch-orders",
+      "larch-policy"
+    ]
+  },
+  {
+    "id": "L13",
+    "kind": "two_domain",
+    "domains": [
+      "Larch",
+      "Pine"
+    ],
+    "text": "Subtract Pine's total posted net collections from Larch's total posted net collections in cents. Use the applicable policy at the time of each checkout; a negative difference is valid.",
+    "required": [
+      "larch-credit",
+      "larch-orders",
+      "larch-policy",
+      "pine-credit",
+      "pine-orders",
+      "pine-policy"
+    ]
+  },
+  {
+    "id": "L14",
+    "kind": "missing",
+    "domains": [
+      "Larch"
+    ],
+    "text": "How many distinct Larch Marketplace resellers placed a posted checkout? Use the reseller classification from its marketplace registry.",
+    "required": [
+      "larch-bridge",
+      "larch-orders",
+      "larch-partner"
+    ]
+  },
+  {
+    "id": "P11",
+    "kind": "support",
+    "domains": [
+      "Pine"
+    ],
+    "text": "How many staff minutes went to incident cases for Pine Gold customers who had at least one completed checkout? Count a case once.",
+    "required": [
+      "pine-account",
+      "pine-bridge",
+      "pine-orders",
+      "pine-ticket"
+    ]
+  },
+  {
+    "id": "P12",
+    "kind": "policy",
+    "domains": [
+      "Pine"
+    ],
+    "text": "Under the Finance memo that applied on each checkout date, how many cents did Pine collect net on posted checkouts that came from West CRM accounts and included a PEN?",
+    "required": [
+      "pine-account",
+      "pine-bridge",
+      "pine-credit",
+      "pine-line",
+      "pine-orders",
+      "pine-policy"
+    ]
+  },
+  {
+    "id": "P13",
+    "kind": "two_domain",
+    "domains": [
+      "Pine",
+      "Violet"
+    ],
+    "text": "Subtract Violet's total posted net collections from Pine's total posted net collections in cents. Use the applicable policy at the time of each checkout; a negative difference is valid.",
+    "required": [
+      "pine-credit",
+      "pine-orders",
+      "pine-policy",
+      "violet-credit",
+      "violet-orders",
+      "violet-policy"
+    ]
+  },
+  {
+    "id": "P14",
+    "kind": "missing",
+    "domains": [
+      "Pine"
+    ],
+    "text": "How many distinct Pine Marketplace resellers placed a posted checkout? Use the reseller classification from its marketplace registry.",
+    "required": [
+      "pine-bridge",
+      "pine-orders",
+      "pine-partner"
+    ]
+  },
+  {
+    "id": "V11",
+    "kind": "support",
+    "domains": [
+      "Violet"
+    ],
+    "text": "How many staff minutes went to incident cases for Violet Gold customers who had at least one completed checkout? Count a case once.",
+    "required": [
+      "violet-account",
+      "violet-bridge",
+      "violet-orders",
+      "violet-ticket"
+    ]
+  },
+  {
+    "id": "V12",
+    "kind": "policy",
+    "domains": [
+      "Violet"
+    ],
+    "text": "Under the Finance memo that applied on each checkout date, how many cents did Violet collect net on posted checkouts that came from West CRM accounts and included a PEN?",
+    "required": [
+      "violet-account",
+      "violet-bridge",
+      "violet-credit",
+      "violet-line",
+      "violet-orders",
+      "violet-policy"
+    ]
+  },
+  {
+    "id": "V13",
+    "kind": "two_domain",
+    "domains": [
+      "Violet",
+      "Willow"
+    ],
+    "text": "Subtract Willow's total posted net collections from Violet's total posted net collections in cents. Use the applicable policy at the time of each checkout; a negative difference is valid.",
+    "required": [
+      "violet-credit",
+      "violet-orders",
+      "violet-policy",
+      "willow-credit",
+      "willow-orders",
+      "willow-policy"
+    ]
+  },
+  {
+    "id": "V14",
+    "kind": "missing",
+    "domains": [
+      "Violet"
+    ],
+    "text": "How many distinct Violet Marketplace resellers placed a posted checkout? Use the reseller classification from its marketplace registry.",
+    "required": [
+      "violet-bridge",
+      "violet-orders",
+      "violet-partner"
+    ]
+  },
+  {
+    "id": "W11",
+    "kind": "support",
+    "domains": [
+      "Willow"
+    ],
+    "text": "How many staff minutes went to incident cases for Willow Gold customers who had at least one completed checkout? Count a case once.",
+    "required": [
+      "willow-account",
+      "willow-bridge",
+      "willow-orders",
+      "willow-ticket"
+    ]
+  },
+  {
+    "id": "W12",
+    "kind": "policy",
+    "domains": [
+      "Willow"
+    ],
+    "text": "Under the Finance memo that applied on each checkout date, how many cents did Willow collect net on posted checkouts that came from West CRM accounts and included a PEN?",
+    "required": [
+      "willow-account",
+      "willow-bridge",
+      "willow-credit",
+      "willow-line",
+      "willow-orders",
+      "willow-policy"
+    ]
+  },
+  {
+    "id": "W13",
+    "kind": "two_domain",
+    "domains": [
+      "Willow",
+      "Cedar"
+    ],
+    "text": "Subtract Cedar's total posted net collections from Willow's total posted net collections in cents. Use the applicable policy at the time of each checkout; a negative difference is valid.",
+    "required": [
+      "cedar-credit",
+      "cedar-orders",
+      "cedar-policy",
+      "willow-credit",
+      "willow-orders",
+      "willow-policy"
+    ]
+  },
+  {
+    "id": "W14",
+    "kind": "missing",
+    "domains": [
+      "Willow"
+    ],
+    "text": "How many distinct Willow Marketplace resellers placed a posted checkout? Use the reseller classification from its marketplace registry.",
+    "required": [
+      "willow-bridge",
+      "willow-orders",
+      "willow-partner"
+    ]
+  }
+]

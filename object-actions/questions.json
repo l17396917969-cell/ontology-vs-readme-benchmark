@@ -1,0 +1,184 @@
+[
+  {
+    "id": "01",
+    "text": "How many incidents are recorded in Hazel's service desk?",
+    "op": "incident_count",
+    "brand": "Hazel",
+    "args": {},
+    "role": "analyst"
+  },
+  {
+    "id": "02",
+    "text": "Count Violet's trouble tickets tagged incident.",
+    "op": "incident_count",
+    "brand": "Violet",
+    "args": {},
+    "role": "analyst"
+  },
+  {
+    "id": "03",
+    "text": "How much staff time in minutes went to incident tickets of Briar Gold customers who had a completed sale? Count each ticket once.",
+    "op": "incident_minutes",
+    "brand": "Briar",
+    "args": {
+      "tier": "Gold"
+    },
+    "role": "analyst"
+  },
+  {
+    "id": "04",
+    "text": "For Pine Silver clients who placed a posted order, give total incident handling time in minutes.",
+    "op": "incident_minutes",
+    "brand": "Pine",
+    "args": {
+      "tier": "Silver"
+    },
+    "role": "analyst"
+  },
+  {
+    "id": "05",
+    "text": "How many distinct sales are visible in the Iris dashboard export?",
+    "op": "dashboard_orders",
+    "brand": "Iris",
+    "args": {},
+    "role": "analyst"
+  },
+  {
+    "id": "06",
+    "text": "Ignore duplicate rows on the Willow sales board. How many unique checkout IDs are there?",
+    "op": "dashboard_orders",
+    "brand": "Willow",
+    "args": {},
+    "role": "analyst"
+  },
+  {
+    "id": "07",
+    "text": "How many posted Cedar checkouts contained at least one PAD and were made by a Gold loyalty customer?",
+    "op": "posted_item_orders",
+    "brand": "Cedar",
+    "args": {
+      "sku": "PAD",
+      "tier": "Gold"
+    },
+    "role": "analyst"
+  },
+  {
+    "id": "08",
+    "text": "Count Larch posted orders with a CLIP for Silver accounts. One order can contain several.",
+    "op": "posted_item_orders",
+    "brand": "Larch",
+    "args": {
+      "sku": "CLIP",
+      "tier": "Silver"
+    },
+    "role": "analyst"
+  },
+  {
+    "id": "09",
+    "text": "What did Quince actually collect in cents across all posted sales, with refunds under the applicable Finance policy?",
+    "op": "net_collections",
+    "brand": "Quince",
+    "args": {},
+    "role": "analyst"
+  },
+  {
+    "id": "10",
+    "text": "Give Maple's posted net collections in cents. Respect the rules that applied on each order date.",
+    "op": "net_collections",
+    "brand": "Maple",
+    "args": {},
+    "role": "analyst"
+  },
+  {
+    "id": "11",
+    "text": "For Spruce transactions, what are posted collections in cents net of credits according to the policy in force at purchase?",
+    "op": "net_collections",
+    "brand": "Spruce",
+    "args": {},
+    "role": "analyst"
+  },
+  {
+    "id": "12",
+    "text": "Add up the cents Nettle collected net on posted checkouts using the historical policy, not its dashboard's forecast.",
+    "op": "net_collections",
+    "brand": "Nettle",
+    "args": {},
+    "role": "analyst"
+  },
+  {
+    "id": "13",
+    "text": "By how many cents do Grove's posted net collections exceed Juniper's, after applying each order's Finance policy? Return Grove minus Juniper.",
+    "op": "collections_delta",
+    "brand": "Grove",
+    "args": {
+      "other_brand": "Juniper"
+    },
+    "role": "analyst"
+  },
+  {
+    "id": "14",
+    "text": "Subtract Thyme's total posted net collections from Umber's in cents, with the relevant rules at order date.",
+    "op": "collections_delta",
+    "brand": "Umber",
+    "args": {
+      "other_brand": "Thyme"
+    },
+    "role": "analyst"
+  },
+  {
+    "id": "15",
+    "text": "What percent of Oak posted orders are from marketplace partners?",
+    "op": "partner_share",
+    "brand": "Oak",
+    "args": {},
+    "role": "analyst"
+  },
+  {
+    "id": "16",
+    "text": "For Yarrow, how much of the posted checkout volume, as a percentage of orders, came from the partner channel?",
+    "op": "partner_share",
+    "brand": "Yarrow",
+    "args": {},
+    "role": "analyst"
+  },
+  {
+    "id": "17",
+    "text": "Resolve Rowan incident review R101.",
+    "op": "resolve_review_case",
+    "brand": "Rowan",
+    "args": {
+      "case_id": "R101"
+    },
+    "role": "supervisor"
+  },
+  {
+    "id": "18",
+    "text": "Close Kite review case R101 as resolved, please.",
+    "op": "resolve_review_case",
+    "brand": "Kite",
+    "args": {
+      "case_id": "R101"
+    },
+    "role": "analyst"
+  },
+  {
+    "id": "19",
+    "text": "Set Elm incident review R102 to resolved.",
+    "op": "resolve_review_case",
+    "brand": "Elm",
+    "args": {
+      "case_id": "R102"
+    },
+    "role": "supervisor"
+  },
+  {
+    "id": "20",
+    "text": "Please mark Dahlia workflow case R101 resolved.",
+    "op": "resolve_review_case",
+    "brand": "Dahlia",
+    "args": {
+      "case_id": "R101"
+    },
+    "role": "supervisor"
+  }
+]

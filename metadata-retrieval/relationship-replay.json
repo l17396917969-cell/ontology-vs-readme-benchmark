@@ -1,0 +1,44 @@
+{
+  "case": "A08",
+  "dataset": {
+    "orders_per_domain": 24,
+    "seed": 41
+  },
+  "observed_records_sha256": "bbce99fdabfcb4915462cf31a4c2219ea466e8d6dde6769b2de7f845d97f661b",
+  "observed_records_note": "Both hypothetical outcomes use the same visible synthetic records.",
+  "catalogue_declaration": "Aster Marketplace partner. SQLite schema: aster_partner(partner_id TEXT, segment TEXT). Alliance registry. One row per partner_id. No buyer, account or order mapping exists in this catalogue.",
+  "model_evidence_ids": [
+    "aster-policy",
+    "aster-orders",
+    "aster-credit",
+    "aster-bridge",
+    "aster-line",
+    "aster-account"
+  ],
+  "model_generated_sql": "SELECT 100.0 * SUM(CASE WHEN a.tier = 'Marketplace' THEN 1 ELSE 0 END) / COUNT(*) FROM aster_orders o JOIN aster_bridge b ON b.buyer = o.buyer JOIN aster_account a ON a.acct = b.acct WHERE o.state = 'ok0'",
+  "replayed_model_output": {
+    "value": 0.0
+  },
+  "full_readme_model_output": {
+    "sql": null
+  },
+  "hypothetical_outcomes": [
+    {
+      "hypothetical_complete_mapping": [],
+      "posted_orders": 16,
+      "partner_orders": 0,
+      "percentage": 0.0
+    },
+    {
+      "hypothetical_complete_mapping": [
+        [
+          "B5",
+          "P0"
+        ]
+      ],
+      "posted_orders": 16,
+      "partner_orders": 3,
+      "percentage": 18.75
+    }
+  ]
+}

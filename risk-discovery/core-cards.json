@@ -1,0 +1,65 @@
+{
+  "sourcing/risk": [
+    "### LINE-ORION\nProduction line. Two orders cover the same sole certified input; each listed delivery alone covers line volume.\n- S1: sources_through [VEND-H](#vend-h)\n- S2: sources_through [VEND-K](#vend-k)",
+    "### VEND-H\nDirect vendor. Has one approved processing site for this order.\n- S3: processed_at [MILL-9](#mill-9)",
+    "### VEND-K\nDirect vendor. Has one approved processing site for this order.\n- S4: processed_at [MILL-9](#mill-9)",
+    "### MILL-9\nFactory. One physical processing site.",
+    "### MILL-4\nFactory. A distinct physical processing site."
+  ],
+  "sourcing/clear": [
+    "### LINE-ORION\nProduction line. Two orders cover the same sole certified input; each listed delivery alone covers line volume.\n- S1: sources_through [VEND-H](#vend-h)\n- S2: sources_through [VEND-K](#vend-k)",
+    "### VEND-H\nDirect vendor. Has one approved processing site for this order.\n- S3: processed_at [MILL-9](#mill-9)",
+    "### VEND-K\nDirect vendor. Has one approved processing site for this order.\n- S4: processed_at [MILL-4](#mill-4)",
+    "### MILL-9\nFactory. One physical processing site.",
+    "### MILL-4\nFactory. A distinct physical processing site."
+  ],
+  "sourcing/unknown": [
+    "### LINE-ORION\nProduction line. Two orders cover the same sole certified input; each listed delivery alone covers line volume.\n- S1: sources_through [VEND-H](#vend-h)\n- S2: sources_through [VEND-K](#vend-k)",
+    "### VEND-H\nDirect vendor. Has one approved processing site for this order.\n- S3: processed_at [MILL-9](#mill-9)",
+    "### VEND-K\nDirect vendor. Has one approved processing site for this order.\n- S4: processed_at record unavailable",
+    "### MILL-9\nFactory. One physical processing site.",
+    "### MILL-4\nFactory. A distinct physical processing site."
+  ],
+  "recovery/risk": [
+    "### SITE-SABLE\nDispatch site. Current state: off. Restoration proceeds only through the listed action.\n- R1: restart_action [STEP-X](#step-x)",
+    "### STEP-X\nRestoration action. Incomplete. Must wait for its listed prerequisite.\n- R2: requires_completion_of [STEP-Y](#step-y)",
+    "### STEP-Y\nValidation action. Incomplete. Must wait for its listed prerequisite.\n- R3: requires_completion_of [STEP-Z](#step-z)",
+    "### STEP-Z\nAuthorisation action. Incomplete. Must wait for its listed prerequisite.\n- R4: requires_completion_of [STEP-X](#step-x)",
+    "### CHECK-P\nIndependent check. Already passed and has no prerequisite."
+  ],
+  "recovery/clear": [
+    "### SITE-SABLE\nDispatch site. Current state: off. Restoration proceeds only through the listed action.\n- R1: restart_action [STEP-X](#step-x)",
+    "### STEP-X\nRestoration action. Incomplete. Must wait for its listed prerequisite.\n- R2: requires_completion_of [STEP-Y](#step-y)",
+    "### STEP-Y\nValidation action. Incomplete. Must wait for its listed prerequisite.\n- R3: requires_completion_of [STEP-Z](#step-z)",
+    "### STEP-Z\nAuthorisation action. Incomplete. Must wait for its listed prerequisite.\n- R4: requires_completion_of [CHECK-P](#check-p)",
+    "### CHECK-P\nIndependent check. Already passed and has no prerequisite."
+  ],
+  "recovery/unknown": [
+    "### SITE-SABLE\nDispatch site. Current state: off. Restoration proceeds only through the listed action.\n- R1: restart_action [STEP-X](#step-x)",
+    "### STEP-X\nRestoration action. Incomplete. Must wait for its listed prerequisite.\n- R2: requires_completion_of [STEP-Y](#step-y)",
+    "### STEP-Y\nValidation action. Incomplete. Must wait for its listed prerequisite.\n- R3: requires_completion_of [STEP-Z](#step-z)",
+    "### STEP-Z\nAuthorisation action. Incomplete. Must wait for its listed prerequisite.\n- R4: requires_completion_of record unavailable",
+    "### CHECK-P\nIndependent check. Already passed and has no prerequisite."
+  ],
+  "approval/risk": [
+    "### PAY-VELA\nPending payment. Policy requires the requesting and approving authority to originate from different accountable units.\n- P1: requested_by [ACT-Q](#act-q)\n- P2: assigned_approval_to [ACT-W](#act-w)",
+    "### ACT-Q\nRequestor account. Raises purchase payments for one accountable unit.\n- P3: authority_origin [UNIT-M](#unit-m)",
+    "### ACT-W\nNamed approval delegate. A distinct login. Authority follows its delegation, irrespective of login ID.\n- P4: authority_origin [UNIT-M](#unit-m)",
+    "### UNIT-M\nAccountable unit. Holds delegated spending authority.",
+    "### UNIT-N\nAccountable unit. A separate accountable unit."
+  ],
+  "approval/clear": [
+    "### PAY-VELA\nPending payment. Policy requires the requesting and approving authority to originate from different accountable units.\n- P1: requested_by [ACT-Q](#act-q)\n- P2: assigned_approval_to [ACT-W](#act-w)",
+    "### ACT-Q\nRequestor account. Raises purchase payments for one accountable unit.\n- P3: authority_origin [UNIT-M](#unit-m)",
+    "### ACT-W\nNamed approval delegate. A distinct login. Authority follows its delegation, irrespective of login ID.\n- P4: authority_origin [UNIT-N](#unit-n)",
+    "### UNIT-M\nAccountable unit. Holds delegated spending authority.",
+    "### UNIT-N\nAccountable unit. A separate accountable unit."
+  ],
+  "approval/unknown": [
+    "### PAY-VELA\nPending payment. Policy requires the requesting and approving authority to originate from different accountable units.\n- P1: requested_by [ACT-Q](#act-q)\n- P2: assigned_approval_to [ACT-W](#act-w)",
+    "### ACT-Q\nRequestor account. Raises purchase payments for one accountable unit.\n- P3: authority_origin [UNIT-M](#unit-m)",
+    "### ACT-W\nNamed approval delegate. A distinct login. Authority follows its delegation, irrespective of login ID.\n- P4: authority_origin record unavailable",
+    "### UNIT-M\nAccountable unit. Holds delegated spending authority.",
+    "### UNIT-N\nAccountable unit. A separate accountable unit."
+  ]
+}

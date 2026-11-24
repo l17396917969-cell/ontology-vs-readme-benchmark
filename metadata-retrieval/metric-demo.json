@@ -1,0 +1,18 @@
+{
+  "supported_metric_checks": 192,
+  "unsupported_checks": 96,
+  "example": {
+    "brand": "Aster",
+    "model_generated_sql": "SELECT 100.0 * SUM(CASE WHEN a.tier = 'Marketplace' THEN 1 ELSE 0 END) / COUNT(*) FROM aster_orders o JOIN aster_bridge b ON b.buyer = o.buyer JOIN aster_account a ON a.acct = b.acct WHERE o.state = 'ok0'",
+    "model_sql_execution": {
+      "value": 0.0
+    },
+    "registered_net_collections": {
+      "status": "ok",
+      "value": 144363
+    },
+    "unregistered_marketplace_share": {
+      "status": "unsupported_metric"
+    }
+  }
+}
